@@ -7,4 +7,15 @@ export default class Frame {
         this.choose = choose; // It will be an object 
     }
 
+    render () {
+        if (this.background !== null) {
+            jQuery("#vino .background").css("background", this.background);
+        }
+
+        // script running needed
+
+        jQuery("#vino #text .content").html(this.textContent);
+
+        // choose render needed
+    }
 }
